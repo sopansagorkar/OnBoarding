@@ -1,6 +1,9 @@
-package org.epam.onboarding.designpatterns;
+package org.epam.onboarding.designpatterns.singleton;
 
-public class DesignPatternImpl {
+import org.epam.onboarding.designpatterns.factory.FactoryClass;
+import org.epam.onboarding.designpatterns.factory.Notification;
+
+public class SingletonClassImpl {
     public static void main(String[] args) {
 
         //Three SingletonClass object created
@@ -8,13 +11,6 @@ public class DesignPatternImpl {
         SingletonClass x = SingletonClass.getInstance();
         SingletonClass y = SingletonClass.getInstance();
         SingletonClass z = SingletonClass.getInstance();
-
-        //Factory Object Creation
-
-        FactoryClass factoryClass=new FactoryClass();
-        Notification notification=factoryClass.createNotification("EMAIL");
-        notification.notifyUser();
-
 
         if (x == y && y == z) {
             System.out.println(

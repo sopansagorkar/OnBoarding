@@ -1,4 +1,4 @@
-package org.epam.onboarding.designpatterns;
+package org.epam.onboarding.designpatterns.singleton;
 
 public class SingletonClass {
 
